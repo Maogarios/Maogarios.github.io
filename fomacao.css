@@ -1,0 +1,141 @@
+.form-box{
+  max-width: 1200px;
+  background: #141414;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  color: white;
+  margin: 0 auto;
+  padding: 100px;
+}
+.form-box h2 {
+  font-size: 8rem;
+  color: #000000;
+  text-transform: uppercase;
+  align-self: start;
+  padding: 10px;
+  margin-right: 50px;
+}
+
+.form-box::after{
+  content: "";
+  width: 120px;
+  height: 100px;
+  background-image: url("./detalhe.svg");
+  position: relative;
+  top: 135px;
+}
+.form-text{
+  margin-bottom: 50px;
+  font-size: 1.6rem;
+  max-width: 40ch;
+  color: #525252;
+  text-align: start;
+  margin: 0px;
+  margin: 40px 0px;
+}
+.faculdades{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 40px 0px;
+}
+.facul-item{
+  background-color: #000000;
+  display: grid;
+  gap: 10px;
+  padding: 20px 20px;
+}
+@media (max-width: 900px){
+  .form-box h2{
+    font-size: 2.5rem;
+  }
+  .form-box{
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px){
+  .faculdades{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 505px){
+  .form-box h2{
+    word-break: keep-all;
+  }
+}
+@media (max-width:400px){
+  .form-box h2{
+    word-break: break-all;
+  }
+}
+.instituicao{
+  padding-top: 25px;
+}
+.facul-item::before{
+    content: "";
+    width: 4px;
+    height: 20px;
+    background-image: linear-gradient(rgb(182, 248, 41),rgb(103, 221, 10));
+    position: absolute;
+    margin-top: 33px;
+    margin-left: -24px;
+}
+.formacao-extra{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin:  40px 0px;
+}
+.formacao-extra h3::before{
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: relative;
+  left: -33px;
+  top: 22px;
+ }
+.cursos h3{
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #525252;
+}
+.cursos h3::before{
+  background-image: url(./cursos.svg);
+}
+.cursos span{
+  color: #525252;
+  font-weight: bold;
+  text-transform: none;
+}
+.cursos ul{
+  margin-bottom: 60px;
+}
+.cursos li{
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.idiomas h3{
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #525252;
+}
+.idiomas h3::before{
+  background-image: url(./idiomas.svg);
+}
+.idiomas span{
+  color: #525252;
+  font-weight: bold;
+  text-transform: none;
+}
+.idiomas ul{
+  margin-bottom: 60px;
+}
+.idiomas li{
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
